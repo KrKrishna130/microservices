@@ -49,7 +49,7 @@ app = FastAPI(
     title="User Service",
     lifespan=lifespan
 )
-
+# rate limiter added
 
 # -------------------------------------------------
 # Rate Limiter
