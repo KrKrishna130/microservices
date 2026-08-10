@@ -178,7 +178,7 @@ async def call_payment_service(amount: float):
 
     return response
 
-
+# fallback mechanism added
 # ==================================================
 # PAYMENT FALLBACK
 # ==================================================
