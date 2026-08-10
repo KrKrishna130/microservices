@@ -17,7 +17,7 @@ from tenacity import (
     wait_exponential,
     retry_if_exception_type
 )
-
+# in order services implement rate limit,retry service registry
 
 # ==================================================
 # EUREKA STARTUP / SHUTDOWN
