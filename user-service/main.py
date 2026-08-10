@@ -7,7 +7,7 @@ from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 import py_eureka_client.eureka_client as eureka_client
 
-
+# service registry for user -service
 # -------------------------------------------------
 # Eureka Startup / Shutdown
 # -------------------------------------------------
