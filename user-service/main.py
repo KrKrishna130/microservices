@@ -68,7 +68,7 @@ app.add_exception_handler(
 
 
 # -------------------------------------------------
-# Health Check
+# Health Check added
 # -------------------------------------------------
 
 @app.get("/health")
