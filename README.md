@@ -91,6 +91,26 @@ python main.py
 
 http://localhost:8003/docs
 =====================================================
+# ===========Micro services Communication================#
+
+# Using Eureka Service Discovery, one service calls another by its registered service name.
+# Use Eureka Service Discovery to find the target service.
+# Call it using its service name, not hardcoded IP.
+# Example: async_do_service("USER-SERVICE", "/users/1")
+
+
+# ==============LoadBalancing======================#
+# Eureka registers multiple instances of the same service.
+# Client selects an available instance using service discovery.
+# This provides client-side load balancing across instances.
+# i.e:-
+# response = await eureka_client.async_do_service(
+#     "USER-SERVICE", "/users/1", method="GET", return_type="json"
+# )
+
+# Eureka automatically selects an available USER-SERVICE instance.
+# Multiple instances can run on different ports for load balancing.
+
 
  
  
